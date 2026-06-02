@@ -17,7 +17,7 @@ public class Number_Triangle_Pattern {
 //            System.out.println();
 
             for (int j=1 ; j<=i ; j++) {
-                System.out.print("*" + " ");
+                System.out.print(i + " ");
             }
 
             System.out.println();
@@ -30,8 +30,8 @@ public class Number_Triangle_Pattern {
 // Output
 
 //Enter the number : 5
-//    *
-//   * *
-//  * * *
-// * * * *
-//* * * * *
+//    1
+//   2 2
+//  3 3 3
+// 4 4 4 4
+//5 5 5 5 5
