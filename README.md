@@ -1,0 +1,380 @@
+# Java Pattern Programs - Learn How to Print Pattern in Java
+
+### In many Java interviews Star, number, and character patterns are the most asked Java Pattern Programs to check your logical and coding skills. Pattern programs in Java help you to sharpen your looping concepts (especially for loop) and problem-solving skills in Java. If you are looking for a place to get all the Java pattern programs with solutions, stop your search here.
+
+#### Here, we have compiled a top pattern exercises on Java.
+
+#### Prerequisite: Remember that to learn pattern programs, you must know Java Loops (for, while, do-while) and basic syntax.
+
+https://www.geeksforgeeks.org/java/java-pattern-programs/
+
+Java Pattern Programs
+Here, you will find the top 25 Java pattern programs with their proper code and explanation. 
+
+All Pattern Programs in Java are mentioned below:
+
+1. Square Hollow Pattern
+This program prints a square where the border is filled with stars (*), and the inside is hollow (filled with spaces).
+
+``` Java
+import java.util.*;​
+public class Geeks {
+
+    public static void printPattern(int n)
+    {
+        int i, j;
+        
+        // outer loop to handle number of rows
+        for (i = 0; i < n; i++) {
+            
+            //  inner loop to handle number of columns
+            for (j = 0; j < n; j++) {
+                
+                // star will print only when  it is in first
+                // row or last row or first column or last
+                // column
+                if (i == 0 || j == 0 || i == n - 1
+                    || j == n - 1) {
+                    System.out.print("*");
+                }
+                
+                // otherwise print space only
+                else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+​
+    // Driver Function
+    public static void main(String args[])
+    {
+        int n = 6;
+        printPattern(n);
+    }
+}
+```
+
+Output
+```
+******
+*    *
+*    *
+*    *
+*    *
+******
+```
+
+2. Number Triangle Pattern
+Prints a right-angled triangle with numbers in increasing row order, aligned to the right.
+
+
+
+```Java
+import java.util.*;
+​
+public class Geeks {
+    
+    // Function to demonstrate pattern
+    public static void printPattern(int n)
+    {
+        int i, j;
+        
+        // outer loop to handle number of rows
+        for (i = 1; i <= n; i++) {
+            
+            // inner loop to print space
+            for (j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            
+            // inner loop to print star
+            for (j = 1; j <= i; j++) {
+                System.out.print(i + " ");
+            }
+            
+            // print new line for each row
+            System.out.println();
+        }
+    }
+​
+    // Driver Function
+    public static void main(String args[])
+    {
+        int n = 6;
+        printPattern(n);
+    }
+}
+```
+
+Output
+```
+     1 
+    2 2 
+   3 3 3 
+  4 4 4 4 
+ 5 5 5 5 5 
+6 6 6 6 6 6
+```
+
+3. Number-Increasing Pyramid Pattern 
+Prints a pyramid where each row contains numbers from 1 to the row number.
+
+
+```Java
+import java.util.*;
+​
+public class Geeks {
+    
+    // Function to demonstrate pattern
+    public static void printPattern(int n)
+    {
+        int i, j;
+        
+        // outer loop to handle number of rows
+        for (i = 1; i <= n; i++) {
+            
+            // inner loop to handle number of columns
+            for (j = 1; j <= i; j++) {
+                
+                // printing column values 
+                // upto the row value
+                System.out.print(j + " ");
+            }
+​
+            // print new line for each row
+            System.out.println();
+        }
+    }
+​
+    // Driver Function
+    public static void main(String args[])
+    {
+        int n = 6;
+        printPattern(n);
+    }
+}
+```
+
+Output
+```
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+1 2 3 4 5 6
+```
+
+
+4. Number-Increasing Reverse Pyramid Pattern
+This is a reverse pyramid where each row starts from 1 and ends at the row count, in decreasing number of elements.
+
+
+
+```Java
+import java.util.*;
+​
+public class Geeks {
+        public static void printPattern(int n)
+    {
+        int i, j;
+        
+        // outer loop to handle number of rows
+        for (i = n; i >= 1; i--) {
+            
+            // inner loop to handle number of columns
+            for (j = 1; j <= i; j++) {
+                
+                // printing column values 
+                // upto the row value
+                System.out.print(j + " ");
+            }
+​
+            // print new line for each row
+            System.out.println();
+        }
+    }
+​
+    // Driver Function
+    public static void main(String args[])
+    {
+        int n = 6;
+        printPattern(n);
+    }
+}
+```
+
+Output
+```
+1 2 3 4 5 6 
+1 2 3 4 5 
+1 2 3 4 
+1 2 3 
+1 2 
+1
+```
+
+5. Number-Changing Pyramid Pattern
+Prints a pyramid where numbers increase continuously from top to bottom.
+
+
+
+```Java
+import java.util.*;
+​
+public class Geeks {
+    
+    public static void printPattern(int n)
+    {
+        int i, j;
+        int num = 1;
+        
+        // outer loop to handle number of rows
+        for (i = 1; i <= n; i++) {
+            
+            // inner loop to handle number of columns
+            for (j = 1; j <= i; j++) {
+                
+                // printing value of num in each iteration
+                System.out.print(num + " ");
+                
+                // increasing the value of num
+                num++;
+            }
+​
+            // printing new line for each row
+            System.out.println();
+        }
+    }
+​
+    // Driver Function
+    public static void main(String args[])
+    {
+        int n = 6;
+        printPattern(n);
+    }
+}
+```
+
+Output
+```
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+16 17 18 19 20 21
+```
+
+6. Zero-One Triangle Pattern
+Prints a triangle where each number alternates between 1 and 0 based on the position.
+
+
+
+```Java
+import java.util.*;
+​
+public class Geeks {
+    
+    public static void printPattern(int n)
+    {
+        int i, j;
+        
+        //outer loop to handle number of rows
+        for (i = 1; i <= n; i++) {
+            
+            //inner loop to handle number of columns
+            for (j = 1; j <= i; j++) {
+                
+                // if the sum of (i+j) is even then print 1
+                if ((i + j) % 2 == 0) {
+                    System.out.print(1 + " ");
+                }
+                // otherwise print 0
+                else {
+                    System.out.print(0 + " ");
+                }
+            }
+​
+            //printing new line for each row
+            System.out.println();
+        }
+    }
+​
+    // Driver Function
+    public static void main(String args[])
+    {
+        int n = 6;
+        printPattern(n);
+    }
+}
+```
+
+Output
+```
+1 
+0 1 
+1 0 1 
+0 1 0 1 
+1 0 1 0 1 
+0 1 0 1 0 1
+````
+
+
+7. Palindrome Triangle Pattern
+Prints a triangle with mirrored numbers forming a palindrome on each row.
+
+
+
+```Java
+import java.util.*;
+​
+public class Geeks {
+    
+    public static void printPattern(int n)
+    {
+        int i, j;
+​
+        // outer loop to handle number of rows
+        for (i = 1; i <= n; i++) {
+            
+            // inner loop to print the spaces
+            for (j = 1; j <= 2 * (n - i); j++) {
+                System.out.print(" ");
+            }
+​
+            // inner loop to print the first part
+            for (j = i; j >= 1; j--) {
+                System.out.print(j + " ");
+            }
+​
+            // inner loop to print the second part
+            for (j = 2; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+​
+            // printing new line for each row
+            System.out.println();
+        }
+    }
+​
+    // Driver Function
+    public static void main(String args[])
+    {
+        int n = 6;
+        printPattern(n);
+    }
+}
+```
+
+Output
+```
+          1 
+        2 1 2 
+      3 2 1 2 3 
+    4 3 2 1 2 3 4 
+  5 4 3 2 1 2 3 4 5 
+6 5 4 3 2 1 2 3 4 5 6
+```
