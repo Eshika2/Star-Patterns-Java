@@ -2,7 +2,7 @@ package Coding_Exercises;
 
 import java.util.Scanner;
 
-public class Zero_One_Triangle_Pattern {
+public class F_Zero_One_Triangle_Pattern {
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
 

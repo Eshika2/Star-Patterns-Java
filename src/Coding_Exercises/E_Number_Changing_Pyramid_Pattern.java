@@ -2,7 +2,7 @@ package Coding_Exercises;
 
 import java.util.Scanner;
 
-public class Number_Changing_Pyramid_Pattern {
+public class E_Number_Changing_Pyramid_Pattern {
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
 

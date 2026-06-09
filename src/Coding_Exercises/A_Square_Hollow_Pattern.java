@@ -2,7 +2,7 @@ package Coding_Exercises;
 
 import java.util.Scanner;
 
-public class Square_Hollow_Pattern {
+public class A_Square_Hollow_Pattern {
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
 

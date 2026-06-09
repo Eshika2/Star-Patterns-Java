@@ -2,7 +2,7 @@ package Coding_Exercises;
 
 import java.util.Scanner;
 
-public class Palindrome_Triangle_Pattern {
+public class G_Palindrome_Triangle_Pattern {
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
 

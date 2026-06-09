@@ -1,6 +1,6 @@
 package Coding_Exercises;
 
-public class Number_Increasing_Reverse_Pyramid_Pattern {
+public class D_Number_Increasing_Reverse_Pyramid_Pattern {
     public static void main(String[] args) {
         int num = 6;
 
