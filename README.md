@@ -13,7 +13,10 @@ Here, you will find the top 25 Java pattern programs with their proper code and 
 
 All Pattern Programs in Java are mentioned below:
 
+
+<br><br>
 1. Square Hollow Pattern
+<br>
 This program prints a square where the border is filled with stars (*), and the inside is hollow (filled with spaces).
 
 ``` Java
@@ -65,8 +68,9 @@ Output
 *    *
 ******
 ```
-
-2. Number Triangle Pattern
+<br><br>
+2. Number Triangle Pattern 
+<br>
 Prints a right-angled triangle with numbers in increasing row order, aligned to the right.
 
 
@@ -117,8 +121,9 @@ Output
  5 5 5 5 5 
 6 6 6 6 6 6
 ```
-
+<br><br>
 3. Number-Increasing Pyramid Pattern 
+<br>
 Prints a pyramid where each row contains numbers from 1 to the row number.
 
 
@@ -167,8 +172,9 @@ Output
 1 2 3 4 5 6
 ```
 
-
+<br><br>
 4. Number-Increasing Reverse Pyramid Pattern
+<br>
 This is a reverse pyramid where each row starts from 1 and ends at the row count, in decreasing number of elements.
 
 
@@ -215,8 +221,9 @@ Output
 1 2 
 1
 ```
-
+<br><br>
 5. Number-Changing Pyramid Pattern
+<br>
 Prints a pyramid where numbers increase continuously from top to bottom.
 
 
@@ -267,8 +274,9 @@ Output
 11 12 13 14 15 
 16 17 18 19 20 21
 ```
-
+<br><br>
 6. Zero-One Triangle Pattern
+<br>
 Prints a triangle where each number alternates between 1 and 0 based on the position.
 
 
@@ -322,8 +330,9 @@ Output
 0 1 0 1 0 1
 ````
 
-
+<br><br>
 7. Palindrome Triangle Pattern
+<br>
 Prints a triangle with mirrored numbers forming a palindrome on each row.
 
 
@@ -377,4 +386,57 @@ Output
     4 3 2 1 2 3 4 
   5 4 3 2 1 2 3 4 5 
 6 5 4 3 2 1 2 3 4 5 6
+```
+
+<br><br>
+8. Rhombus Pattern
+<br>
+Prints a rhombus (tilted square) made of stars, shifted by spaces.
+
+
+```Java
+import java.util.*;
+​
+public class Geeks {
+    
+    public static void printPattern(int n)
+    {
+        int i, j;
+        int num = 1;
+        
+        // outer loop to handle number of rows
+        for (i = 1; i <= n; i++) {
+            
+            // inner loop to print spaces
+            for (j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+​
+            // inner loop to print stars
+            for (j = 1; j <= n; j++) {
+                System.out.print("*");
+            }
+            
+            // printing new line for each row
+            System.out.println();
+        }
+    }
+​
+    // Driver Function
+    public static void main(String args[])
+    {
+        int n = 6;
+        printPattern(n);
+    }
+}
+```
+
+Output
+```
+     ******
+    ******
+   ******
+  ******
+ ******
+******
 ```
