@@ -440,3 +440,148 @@ Output
  ******
 ******
 ```
+
+<br><br>
+
+9. Diamond Star Pattern
+<br>
+Prints a diamond shape made of stars.
+
+```Java
+import java.util.*;
+​
+public class Geeks {
+​
+    public static void printPattern(int n)
+    {
+        int i, j;
+        int num = 1;
+        
+        // outer loop to handle upper part
+        for (i = 1; i <= n; i++) {
+            
+            // inner loop to print spaces
+            for (j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            
+            // inner loop to print stars
+            for (j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+​
+        // outer loop to handle lower part
+        for (i = n-1; i >= 1; i--) {
+            
+            // inner loop to print spaces
+            for (j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            
+            // inner loop to print stars
+            for (j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+​
+    // Driver Function
+    public static void main(String args[])
+    {
+        int n = 6;
+        printPattern(n);
+    }
+}
+```
+
+Output
+```
+     *
+    ***
+   *****
+  *******
+ *********
+***********
+ *********
+  *******
+   *****
+    ***
+     *
+```
+
+<br><br>
+
+10. Butterfly Star Pattern
+<br>
+Prints a butterfly-shaped pattern using stars (*).
+
+```Java
+import java.util.*;
+​
+public class Geeks {
+  
+    public static void printPattern(int n)
+    {
+        // Outer loop to handle the upper part
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= 2 * n; j++) {
+              
+                // To print spaces
+                if (j > i && j <= 2 * n - i) {
+                    System.out.print(" ");
+                }
+                
+                // To print stars
+                else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+​
+        // Outer loop to handle the lower part
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= 2 * n; j++) {
+              
+                // To print spaces
+                if (j > i && j <= 2 * n - i) {
+                    System.out.print(" ");
+                }
+                
+                // To print stars
+                else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+    }
+​
+    // Driver Function
+    public static void main(String[] args)
+    {
+        // Number of rows
+        int n = 6; 
+        printPattern(n);
+    }
+}
+```
+
+Output
+```
+*          *
+**        **
+***      ***
+****    ****
+*****  *****
+************
+************
+*****  *****
+****    ****
+***      ***
+**        **
+*          *
+```
