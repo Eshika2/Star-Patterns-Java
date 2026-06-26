@@ -585,3 +585,49 @@ Output
 **        **
 *          *
 ```
+<br><br>
+
+11. Square Fill Pattern
+<br>
+This program prints a filled square of stars (*) with n+1 rows and columns.
+
+```Java
+import java.util.*;
+​
+public class Geeks {
+​
+    public static void printPattern(int n)
+    {
+        int i, j;
+​
+        // outer loop to handle rows
+        for (i = 0; i < n; i++) {
+​
+            // inner loop to handle columns
+            for (j = 0; j < n; j++) {
+                System.out.print("*");
+            }
+​
+            // printing new line for each row
+            System.out.println();
+        }
+    }
+​
+    // Driver Function
+    public static void main(String args[])
+    {
+        int n = 6;
+        printPattern(n);
+    }
+}
+```
+
+Output
+```
+******
+******
+******
+******
+******
+******
+```
