@@ -889,3 +889,55 @@ Output
  * * * * * 
 * * * * * * 
 ```
+
+<br><br>
+17. Reverse Number Triangle Pattern
+<br>
+A reverse right-aligned triangle with ascending numbers from i to n.
+
+
+
+```Java
+import java.util.*;
+​
+public class Geeks {
+​
+    public static void printPattern(int n)
+    {
+        int i, j;
+        
+        // outer loop to handle rows
+        for (i = 1; i <= n; i++) {
+​
+            // inner loop to print spaces.
+            for (j = 1; j < i; j++) {
+                System.out.print(" ");
+            }
+​
+            // inner loop to print value of j.
+            for (j = i; j <= n; j++) {
+                System.out.print(j + " ");
+            }
+​
+            // printing new line for each row
+            System.out.println();
+        }
+    }
+​
+    // Driver Function
+    public static void main(String args[])
+    {
+        int n = 6;
+        printPattern(n);
+    }
+}
+```
+Output
+```
+1 2 3 4 5 6 
+ 2 3 4 5 6 
+  3 4 5 6 
+   4 5 6 
+    5 6 
+     6 
+```
